@@ -21,7 +21,12 @@ Goal: Identify AI modernization targets in legacy ERP business logic.
 
 # 1. Clone repository
 git clone https://github.com/JayadeepVeera/legacy-analyzer
+
+
 cd legacy-analyzer
+
+
+
 
 # 2. Run analysis
 python src/analyze.py
@@ -137,6 +142,7 @@ Technical Challenges Solved
 ✅ Windows UTF-8 encoding → encoding='utf-8' on all writes
 ✅ CLI flexibility → argparse --folder parameter
 ✅ Production-ready → Error handling + progress indicators
+
 
 
 
