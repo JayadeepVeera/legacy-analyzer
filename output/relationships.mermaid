@@ -1,0 +1,17 @@
+graph TD
+    sales_invoice[sales_invoice.py](10 functions)
+    sales_invoice_dashboard[sales_invoice_dashboard.py](1 functions)
+    test_sales_invoice[test_sales_invoice.py](10 functions)
+    __init__[__init__.py](0 functions)
+
+    sales_invoice --> make_customer_gl_entry([make_customer_gl_entry])
+    sales_invoice --> get_gle_for_change_amount([get_gle_for_change_amount])
+    sales_invoice --> _update_asset([_update_asset])
+    sales_invoice --> __init__([__init__])
+    sales_invoice --> get_sales_invoice_details([get_sales_invoice_details])
+    sales_invoice_dashboard --> get_data([get_data])
+    test_sales_invoice --> test_auto_write_off_amount([test_auto_write_off_amount])
+    test_sales_invoice --> test_sales_invoice_without_customer_group_and_territory([test_sales_invoice_without_customer_group_and_territory])
+    test_sales_invoice --> test_pos_change_amount([test_pos_change_amount])
+    test_sales_invoice --> test_pos_returns_without_update_outstanding_for_self([test_pos_returns_without_update_outstanding_for_self])
+    test_sales_invoice --> test_advance_entries_as_liability([test_advance_entries_as_liability])

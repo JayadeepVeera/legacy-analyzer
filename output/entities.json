@@ -1,0 +1,55 @@
+[
+  {
+    "file": "sales_invoice.py",
+    "path": "C:\\Users\\ASUS\\Desktop\\legacy-analyzer\\erpnext\\erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py",
+    "functions": [
+      "make_customer_gl_entry",
+      "get_gle_for_change_amount",
+      "_update_asset",
+      "__init__",
+      "get_sales_invoice_details",
+      "on_cancel",
+      "check_if_consolidated_invoice",
+      "validate_income_account",
+      "make_maintenance_schedule",
+      "validate_for_repost"
+    ],
+    "classes": [
+      "PartialPaymentValidationError",
+      "SalesInvoice"
+    ]
+  },
+  {
+    "file": "sales_invoice_dashboard.py",
+    "path": "C:\\Users\\ASUS\\Desktop\\legacy-analyzer\\erpnext\\erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice_dashboard.py",
+    "functions": [
+      "get_data"
+    ],
+    "classes": []
+  },
+  {
+    "file": "test_sales_invoice.py",
+    "path": "C:\\Users\\ASUS\\Desktop\\legacy-analyzer\\erpnext\\erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py",
+    "functions": [
+      "test_auto_write_off_amount",
+      "test_sales_invoice_without_customer_group_and_territory",
+      "test_pos_change_amount",
+      "test_pos_returns_without_update_outstanding_for_self",
+      "test_advance_entries_as_liability",
+      "test_pos_gl_entry_with_perpetual_inventory",
+      "test_rounding_adjustment_3",
+      "test_ledger_entries_on_opening_invoice_with_rounding_loss_by_inclusive_tax",
+      "create_internal_supplier",
+      "test_incoming_rate_for_stand_alone_credit_note"
+    ],
+    "classes": [
+      "TestSalesInvoice"
+    ]
+  },
+  {
+    "file": "__init__.py",
+    "path": "C:\\Users\\ASUS\\Desktop\\legacy-analyzer\\erpnext\\erpnext\\accounts\\doctype\\sales_invoice\\__init__.py",
+    "functions": [],
+    "classes": []
+  }
+]
