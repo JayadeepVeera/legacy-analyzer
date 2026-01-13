@@ -37,10 +37,24 @@ python src/analyze.py
 ✅ Instantly generates 3 deliverables:
 
 
+
+
+
+
 output/
+
+
 ├── entities.json           # Structured data (21 functions)
+
+
+
 ├── relationships.mermaid   # Visual dependency graph
+
+
+
 └── summary.md             # Executive business analysis
+
+
 
 
 
@@ -48,13 +62,26 @@ output/
 
 
 
+
+
+
+
 1. entities.json (Raw Intelligence)
+
+
+
+
+
    [
+
+   
   {
-    "file": "sales_invoice.py",
+     "file": "sales_invoice.py",
     "functions": ["validate", "make_gl_entries", "before_save", "on_submit"],
     "classes": ["SalesInvoice"]
   },
+  
+  
   {
     "file": "test_sales_invoice.py", 
     "functions": ["test_validate", "test_make_gl_entries"],
@@ -65,18 +92,42 @@ output/
 
 
 
+
 2. relationships.mermaid (Visual Graph)
+
+
+
+
 Copy contents → mermaid.live → Instant visualization:
 
 
+
+
+
 salesinvoice[sales_invoice.py(10 functions)]
+
+
+
 salesinvoice --> validate([validate()])
+
+
+
+
 salesinvoice --> make_gl_entries([make_gl_entries()])
+
+
+
+
 test_salesinvoice --> test_validate([test_validate()])
 
 
 
+
+
 3. summary.md (Executive Summary)
+
+
+
 Auto-generated business insights from your analysis.
 
 
@@ -97,51 +148,127 @@ Auto-generated business insights from your analysis.
 
 
 Frappe Framework Hooks Discovered
+
+
+
 ✅ validate()           → Data validation logic
-✅ make_gl_entries()    → Accounting engine  
+
+
+✅ make_gl_entries()    → Accounting engine
+
+
+
 ✅ before_save()        → Pre-persist business rules
+
+
+
 ✅ on_submit()          → Post-submit workflows
 
 
 
 
 🛠️ Technical Architecture
+
+
+
+
 ERPNext Source Code
+
+
      ↓ pathlib.glob("*.py")
+
+
 File Discovery (4 files)
+
+
      ↓ re.findall(r'def\s+(\w+)')
+
+     
 Entity Extraction (21 functions)
+
+
      ↓ Mermaid DSL generation
+
+     
 3 Artifacts (JSON + Graph + Report)
 
 
 
 Tech Stack:
 
+
 ->Core: Python 3.12, pathlib, re, json
+
+
 ->CLI: argparse
+
+
 ->Visualization: Mermaid syntax
+
+
 ->Cross-platform: Windows/Linux UTF-8
+
+
 
 📊 Complete Analysis Results
 
 
+
+
 📁 Files scanned: 4/4 (100%)
+
+
+
 ⚙️  Functions discovered: 21
+
+
+
+
 🎓 Classes identified: 3
+
+
+
+
 🧜 Artifacts generated: 3/3
+
+
+
+
 ✅ Cross-platform: Windows/Linux
+ 
+ 
+ 
 ✅ CLI ready: python src/analyze.py --help
+
+
 
 
 💡 Development Reflection
 
 
+
+
+
 Technical Challenges Solved
+
+
+
+
 ✅ Nested erpnext/erpnext folder → pathlib.rglob("*.py")
+
+
+
 ✅ Windows UTF-8 encoding → encoding='utf-8' on all writes
+
+
+
 ✅ CLI flexibility → argparse --folder parameter
+
+
+
+
 ✅ Production-ready → Error handling + progress indicators
+
 
 
 
