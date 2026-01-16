@@ -6,11 +6,11 @@
 
 ### sales_invoice.py
 - **10 functions**
-- Sample: `make_customer_gl_entry, get_gle_for_change_amount, _update_asset`
+- Sample: `validate_time_sheets_are_submitted, make_sales_return, update_billed_qty_in_scio`
 
 ### test_sales_invoice.py
 - **10 functions**
-- Sample: `test_auto_write_off_amount, test_sales_invoice_without_customer_group_and_territory, test_pos_change_amount`
+- Sample: `get_outstanding_amount, test_discount_on_net_total, test_incoming_rate_for_stand_alone_credit_note`
 
 ### sales_invoice_dashboard.py
 - **1 functions**
@@ -22,7 +22,8 @@
 
 ## Business Logic Functions Found
 
-**sales_invoice.py:** `make_customer_gl_entry, get_gle_for_change_amount, get_sales_invoice_details`
+**sales_invoice.py:** `validate_time_sheets_are_submitted, make_sales_return, validate_income_account`
 **sales_invoice_dashboard.py:** `get_data`
+**test_sales_invoice.py:** `get_outstanding_amount, get_taxes_and_charges`
 
 **Full data:** [entities.json](output/entities.json)
