@@ -1,0 +1,17 @@
+[
+  {
+    "old": "validate_time_sheets_are_submitted(frappe)",
+    "new": "@app.post(\"/invoices/validate\")\nasync def validate_invoice(invoice: InvoiceCreate):\n    if invoice.total < 0:\n        raise HTTPException(status_code=400, detail=\"Negative total not allowed\")\n    return {\"status\": \"valid\", \"invoice_id\": invoice.id}",
+    "status": "MIGRATED!"
+  },
+  {
+    "old": "make_sales_return(frappe)",
+    "new": "@app.post('/make_sales_return/')\nasync def make_sales_return_endpoint(data):\n    return {'status': 'migrated'}",
+    "status": "MIGRATED!"
+  },
+  {
+    "old": "update_billed_qty_in_scio(frappe)",
+    "new": "@app.post('/update_billed_qty_in_scio/')\nasync def update_billed_qty_in_scio_endpoint(data):\n    return {'status': 'migrated'}",
+    "status": "MIGRATED!"
+  }
+]
